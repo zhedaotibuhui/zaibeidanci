@@ -1,0 +1,9 @@
+<view>
+<scroll-view class="content-disbook" ><!-- scroll-view 滚动视图，scroll-y 纵向滚动 ，并在WXSS里添加一个滚动高度  -->
+  <view wx:for="{{DataList}}" wx:key="_id" class='{{index == 0 ? "navTitleLine" : "navTitle"}}'><!-- wx:for 遍历显示数据 -->
+      <view class="errorword">  
+        <view data-val="{{item._id}}" catchtap="transfer">{{item.content}}</view>
+      </view>
+  </view>
+</scroll-view>
+</view>

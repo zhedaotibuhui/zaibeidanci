@@ -1,0 +1,10 @@
+<!-- 弹框组件。无需加载任何数据，可随意引用 -->
+<view class="a" wx:if="{{showContainer}}" bindtap="hidden" catchtouchmove="none">
+    <view class="b" catchtap="none">
+        <scroll-view scroll-y class="d">
+            <slot name="first">
+                <!-- 在引用组件的页面中，写在组件标签内的代码，将在此处出现。没有代码就不显示 -->
+            </slot>
+        </scroll-view>
+    </view>
+</view>

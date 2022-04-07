@@ -1,0 +1,55 @@
+{
+    "pages": [
+        "pages/show/show",
+        "pages/home/home",
+        "pages/index/index",
+        "pages/auth/auth",
+        "pages/wordBook/wordBook",
+        "components/container/container",
+        "pages/wordBook/bookDetail/bookDetail",
+        "pages/search/search",
+        "pages/wordBook/video/video",
+        "pages/status/status",
+        "pages/remind/remind",
+        "pages/task/task",
+        "pages/punchCard/punchCard",
+        "pages/review/review",
+        "pages/changeDct/changeDct",
+        "pages/statistics/statistics"
+    ],
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "window": {
+        "navigationBarBackgroundColor": "#FFDAB9",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "在背单词"
+    },
+    "tabBar": {
+        "selectedColor": "#FFDAB9",
+        "list": [
+            {
+                "pagePath": "pages/show/show",
+                "text": "首页",
+                "iconPath": "static/tabbar/home.png",
+                "selectedIconPath": "static/tabbar/home (1).png"
+            },
+            {
+                "pagePath": "pages/search/search",
+                "text": "查词",
+                "iconPath": "static/tabbar/search.png",
+                "selectedIconPath": "static/tabbar/search-selected.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我的",
+                "iconPath": "static/tabbar/我的 (1).png",
+                "selectedIconPath": "static/tabbar/我的.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "就不背单词将获取你的位置"
+        }
+    }
+}

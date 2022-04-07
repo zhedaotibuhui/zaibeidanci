@@ -1,0 +1,163 @@
+/* miniprogram/pages/home/home.wxss */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* sign */
+.sign-container{
+  /* background: rgb(255, 170, 170); */
+  width: 90%;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+
+
+.sign-guide-text{
+  display: block;
+  font-size: 35rpx;
+  color: #333333;
+  font-weight: bold;
+}
+
+.sign-num-text{
+  font-size: 90rpx;
+  color: rgb(29, 214, 159);
+}
+
+.sign-num-day-text{
+  font-size: 40rpx;
+  color: #333333;
+  margin-left: 10rpx;
+}
+
+.calendar{
+  /* background: #c8ffc8; */
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+
+.calendar-text{
+  font-weight: bold;
+  font-size: 25rpx;
+  color: rgb(148, 148, 148);
+}
+
+.calendar-icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+/* vocabulary */
+
+.vocabulary-container{
+  width: 90%;
+  height: 230rpx;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  margin-top: 70rpx;
+  border-radius: 30rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.vocabulary-background-image{
+  width: 100%;
+}
+
+.vocabulary-name-text{
+  color: white;
+  font-size: 35rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+}
+
+.vocabulary-guide{
+  color: white;
+  font-size: 28rpx;
+  position: absolute;
+  right: 0;
+  top: 32rpx;
+  background: rgb(29, 214, 159);
+  height: 1.05rem;
+  line-height: 1.05rem;
+  padding-right: 20rpx;
+  border-radius: 15% 0% 0% 15% / 50% 0% 0% 50%;
+  /* box-shadow: #333333 5rpx 10rpx 10rpx; */
+}
+
+.picker{
+  padding: 13px;
+  background-color: #FFFFFF;
+}
+
+.vocabulary-icon{
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+}
+
+.vocabulary-progress{
+  height: 30%;
+  width: 92%;
+  left: 4%;
+  position: absolute;
+  bottom: 0rpx;
+  /* background: rgb(97, 75, 197); */
+}
+
+.vocabulary-progress-text,.vocabulary-progress-text-left,.vocabulary-progress-text-right{
+  font-size: 23rpx;
+  color: white;
+  /* background: red; */
+}
+
+.vocabulary-progress-text-left{
+  float: left;
+}
+
+.vocabulary-progress-text-right{
+  float: right;
+}
+
+.vocabulary-progress-bar-container{
+  width: 100%;
+  position: relative;
+  margin-top: 15rpx;
+}
+
+.vocabulary-progress-bar{
+  height: 4rpx;
+  top: 0rpx;
+  position: absolute;
+  width: 100%;
+}
+
+/* .vocabulary-progress-bar-mask{
+  background: rgb(60, 219, 185);
+  top: 0rpx;
+  width: 2%;
+} */
+
+
+
+
+
+
+.conment{
+  margin-top: 300rpx;
+}
+
+.learnStr {
+  padding: 30rpx;
+}
+
+.learnRvw{
+  padding: 30rpx;
+}
+

@@ -1,0 +1,17 @@
+<view class="dictionary-container">
+    <view>
+        <text class="text-title">其它形式</text>
+        <text user-select="{{true}}">{{distortion}}</text>
+    </view>
+    <view>
+        <text class="text-title">词组</text>
+        <text user-select="{{true}}">{{phrase}}</text>
+    </view>
+    <view>
+        <text class="text-title">例句</text>
+            <view class="text-content">
+            <text class="text-content-sentence-word" user-select="{{true}}">{{samples}}</text>
+            </view>
+    </view>
+</view>
+<view class="button-next" catchtap="getback">继续学习</view>

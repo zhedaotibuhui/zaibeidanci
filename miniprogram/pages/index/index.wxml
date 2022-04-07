@@ -1,0 +1,18 @@
+<view class="container">
+    <text class="word-content" bindtap="getDef">{{content}}</text>
+    <view class="pron-container">
+      <image class="pron-icon" src="../../static/tabbar/laba.jpeg"></image>
+      <text class="word-pron" bindtap="read">/{{pron}}/</text>
+    </view>
+    <text wx:if = "{{showDef}}" class = "word-definition" >{{definition}}</text>
+    <view class="button-next" catchtap="next">
+      <text class="word-next" catchtap="next">下一个</text> 
+    </view>
+    <view class="button-miss" catchtap="show">
+      <text class="word-miss" catchtap="show">模糊</text>
+    </view>
+    <view class="button-add" catchtap="addWord">
+      <text class="word-add" catchtap="addWord" wx:if='{{showNot}}'>加入生词本</text> 
+      <text class="word-add" catchtap="addWord" wx:else>已加入生词本</text> 
+    </view>
+</view>

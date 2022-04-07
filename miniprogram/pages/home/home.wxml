@@ -1,0 +1,77 @@
+
+<view class="container">
+  <view class="top-view">
+    <view class="user">
+        <view class="container">
+          <view class="userinfo">
+            <block wx:if="{{!hasUserInfo}}">
+              <test class="name" wx:if="{{!hasUserInfo}}" bindtap="getUserProfile"> 登录 </test>
+            </block>
+            <block wx:else >
+              <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+              <text class="userinfo-nickname" >{{userInfo.nickName}}</text>
+            </block>
+          </view>
+        </view>
+      <view class="site" bindtap="status">查看个人主页</view>
+    </view>
+  </view>
+      
+  <view class = "numbers">
+    <view class="task-container" data-type="{{1}}" bindtap="toDictionary">
+        <text class="task-guide-text">· 我的数据 ·</text>
+        <view class="task-info">
+            <view class="task-info-trisection" bindtap="toReview">
+                <text class="task-info-trisection-top-text">{{newWordsNum}}</text>
+                <text class="task-info-trisection-bottom-text">已学单词</text>
+            </view>
+
+            <view class="task-info-trisection" bindtap="wordList" data_id="3" data_name="wordbook">
+              <view class="task-info-trisection-top-text">{{count}}</view>
+              <text class="task-info-trisection-bottom-text">生词本</text>   
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class="divLine"></view>
+    <view class="options-block">
+        <view class="option">
+            <view class="option-icon-container">
+                <image class="option-icon" src="../../images/icons/email.png"/>
+            </view>
+            <text class="option-text">问题反馈</text>
+            <view class="option-icon-right-container">
+                <image  class="option-icon-right" src="../../images/icons/right.png"/>
+            </view>
+        </view>
+        <view class="option">
+            <view class="option-icon-container">
+                <image class="option-icon" src="../../images/icons/file.png"/>
+            </view>
+            <text class="option-text">关于我们</text>
+            <view class="option-icon-right-container">
+                <image  class="option-icon-right" src="../../images/icons/right.png"/>
+            </view>
+        </view>
+        <view class="option">
+            <view class="option-icon-container">
+                <image class="option-icon" src="../../images/icons/star.png"/>
+            </view>
+            <text class="option-text">分享小程序</text>
+            <view class="option-icon-right-container">
+                <image  class="option-icon-right" src="../../images/icons/right.png"/>
+            </view>
+        </view>
+        <view class="option">
+            <view class="option-icon-container">
+                <image  class="option-icon" src="../../images/icons/exit.png"/>
+            </view>
+            <text class="option-text" bindtap="exitMiniprogram">退出小程序</text>
+            <view class="option-icon-right-container">
+                <image  class="option-icon-right" src="../../images/icons/right.png"/>
+            </view>
+        </view>
+    </view>
+
+</view>
+

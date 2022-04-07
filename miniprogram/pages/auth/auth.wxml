@@ -1,0 +1,23 @@
+<!--pages/auth/auth.wxml-->
+<view class="logo">
+  <image src="/static/背景.png"></image>
+  <text>
+    在背单词</text>
+</view>
+
+<view class="from">
+  <view class="row-group">
+    <text>手机号：</text>
+    <input placeholder="请输入手机号" placeholder-class="txt" maxlength="11" value="{{phone}}" bindinput="bindPhoneInput"/>
+
+  </view>
+  <view class="row-group">
+    <text>验证码：</text>
+    <input placeholder="请输入验证码" placeholder-class="txt" maxlength="4" value="{{code}}" bindinput="bindCodeInput" />
+    <view class="code" bindtap="onClickCheckCode">获取验证码</view>
+  </view>
+
+  <view>
+    <button class="submit" open-type="getUserInfo" bindgetuserinfo="onClickSubmit" type="primary">登录 | 注册</button>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<view class="a">
+    <icon type="search" size="120"></icon>
+</view>
+<view class="b">
+    <input class="c" type="text" placeholder="请输入您要查询的单词" bindinput="inputword"/>
+</view>
+<button class="d" plain bindtap="search">查询</button>
+<view class="e" wx:if="{{randomWord}}">
+    <view>{{randomWord.content}}</view>
+    <view><text decode>{{randomWord.pron}}</text></view>
+    <view>{{randomWord.definition}}</view>
+</view>
+<!-- 直接引用弹框组件。需要显示在组件内的数据，直接写在组件标签内即可 -->
+<a id="search">
+    <!-- 开始。这部分内容将显示在组件的slot标签之内，样式或方法，直接写在这个页面的css和js里，不需要对组件做其他修改。所写样式不影响组件原有样式 -->
+    <view slot="first">
+        <view class="g">{{word.content}}</view>
+        <view class="f" bindtap="read">
+            <image class="pron-icon" src="../../static/tabbar/laba.jpeg"></image>
+            <view>{{word.pron}}</view>
+        </view>
+        <text decode class="f">{{word.definition}}</text>
+        <view class="f">
+            <text decode>{{word.samples}}</text>
+        </view>
+        <button class="h" type="primary" catchtap="addWord">加入生词本</button>
+    </view>
+    <!-- 结束 -->
+</a>

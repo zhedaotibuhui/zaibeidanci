@@ -1,0 +1,14 @@
+<view class="page">
+
+<view class="container">
+  <text class="charts-card__header">任务完成率</text>
+  <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+</view>
+
+<view>  
+    <view class="charts-card__header">每天完成量</view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+    <view style="margin-top:30px;text-align:center"></view>
+  </view>
+
+</view>

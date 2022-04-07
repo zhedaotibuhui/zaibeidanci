@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Chalkboard;
+  src: url('../../assets/font/chalkboard.ttf'),
+}
+
+.content-disbook{
+  height: 1500rpx;
+  display: flex;
+  align-items: 20rpx;
+}
+
+.errorword{
+  display: flex;
+  align-items: center;
+  padding: 15rpx;
+}

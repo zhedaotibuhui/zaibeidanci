@@ -1,0 +1,83 @@
+
+.selected_date {
+  padding: 20rpx;
+  overflow: hidden;
+}
+
+.selected_date>view {
+  width: 33.3%;
+  float: left;
+}
+
+.calendar_panel{
+  color: #8f8f8f;
+}
+
+.calendar_header {
+  width: 100%;
+  color: rgb(73, 73, 73);
+  /* height: 600rpx; */
+}
+
+.calendar_box {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.weekday_label {
+  width: 14.28%;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 12pt;
+  padding: 10rpx 0;
+}
+
+.weekday_label>text {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: inline-block;
+  font-size: 13pt;
+}
+
+.select_icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.active_date {
+  border:1px solid #148447;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.full{
+  background-color: #148447;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.poor{
+  background-color: 1px solid  #ffffff;
+  color: #000000;
+}
+
+.show_box {
+  padding: 20rpx;
+  font-size: 26rpx;
+}
+
+.calendar_box:nth-child(2) .weekday_label{
+  float: right;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.days-assist{
+    padding: 200rpx;
+}

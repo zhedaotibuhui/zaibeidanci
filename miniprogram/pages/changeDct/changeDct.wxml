@@ -1,0 +1,24 @@
+<view class="plan-block">
+
+    <text class="plan-guide-text-left">我的学习任务</text>
+    <text class="plan-guide-text-right">{{currBook?'正在学':'尚未选择'}}</text>
+    <view class='currBook'>
+        <text>{{currBook}}</text>
+    </view>
+
+
+    <view class="books-block">
+        <view class="books-guide">
+            <text class="books-guide-text">我的单词书：</text>
+            <view class="books-info-bottom">
+                <block wx:for="{{bookList}}" wx:key="index">
+                    <view class="a">
+                        <text>{{item.name}}</text>
+                        <view class="books-select-button" catchtap="chooseType" data-index="{{index}}">切换</view>
+                    </view>
+                </block>
+            </view>
+
+        </view>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<view wx:for="{{words}}" wx:key="*this">
+  <view class="cet" >
+    <view class="wordPart">
+      <text class="word">{{item.content}}</text>
+      <view class="soundmark">
+        <image class = 'soundmark-icon' src = "../../../static/tabbar/laba.jpeg"></image>
+        <text class = "word-pron" catchtap="read">/{{item.pron}}/</text>
+      </view>
+    </view>
+    <text  class = "word-definition">{{item.definition}}</text>
+    <view class="button-mst" catchtap="remove">
+      <text calss='master' data-val="{{item._id}}" catchtap="remove">已认识</text>
+    </view>
+    <view class="button-fgt" catchtap="audio">
+      <text calss='forget' data-val="{{item._id}}" catchtap="audio">提示</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- <view class="back">
+  <button class = "back" catchtap='back'>返回生词本</button>
+</view> -->

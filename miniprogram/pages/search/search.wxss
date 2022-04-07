@@ -1,0 +1,56 @@
+.a {
+    text-align: center;
+    margin-top: 118rpx;
+}
+
+.b {
+    text-align: center;
+    margin: 40px 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.pron-icon {
+    width: 48rpx;
+    height: 48rpx;
+  }
+
+.c {
+    border-radius: 20px;
+    background-color: #ededed;
+    padding: 10px 20px;
+}
+
+.d {
+    font-weight: normal;
+}
+
+.e {
+    margin: 30px 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px #dedede;
+    padding: 10px 20px;
+}
+
+.e view {
+    padding: 10px;
+}
+
+#search {
+    position: relative;
+    z-index: 2;
+}
+
+.f {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.g {
+    text-align: center;
+    font-weight: bold;
+}
+.h{
+    margin-bottom: 10px;
+}

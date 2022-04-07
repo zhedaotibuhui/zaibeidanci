@@ -1,0 +1,11 @@
+<!--当前为停止状态  -->
+<view style="width:250rpx;height:250rpx;left:250rpx;top:12rpx;position:relative;" wx:if="{{isplay==false}}" bindtap='play'>
+  <image style="width:100%;height:100%;border-radius:50%;" src='../../../static/tabbar/cd.png' />
+  <image src='../../../static/tabbar/stop.png' style="width:100rpx;height:100rpx;position:absolute;left:75rpx;top:75rpx;"></image>
+</view>
+<!--当前为播放状态  -->
+<view style="width:250rpx;height:250rpx;left:250rpx;top:12rpx;position:relative;" wx:if="{{isplay==true}}" bindtap='stop'>
+  <image style="width:100%;height:100%;border-radius:50%;" src='../../../static/tabbar/cd.png' />
+  <image src='../../../static/tabbar/play.png' style="width:100rpx;height:100rpx;position:absolute;left:75rpx;top:75rpx;"></image>
+</view>
+<!-- <slider style="width:500rpx;margin-left:125rpx;"></slider> -->

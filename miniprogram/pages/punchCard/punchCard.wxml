@@ -1,0 +1,34 @@
+<view class="selected_date">
+  <view bindtap="preMonth">
+    <image class="select_icon" src="../../static/tabbar/left.png"></image>
+  </view>
+  <view class="text_center">{{curYear+'-'+curMonth}}</view>
+  <view style="text-align:right;" bindtap="nextMonth">
+    <image class="select_icon" src="../../static/tabbar/right.png"></image>
+  </view>
+</view>
+<view class="calendar_panel">
+  <view class="calendar_header">
+    <view class="weekday_label">日</view>
+    <view class="weekday_label">一</view>
+    <view class="weekday_label">二</view>
+    <view class="weekday_label">三</view>
+    <view class="weekday_label">四</view>
+    <view class="weekday_label">五</view>
+    <view class="weekday_label">六</view>
+  </view>
+  <view class="calendar_box" wx:for="{{dateList}}" wx:for-item="week" wx:key="{{index}}">
+    <view class="weekday_label" wx:for="{{week}}" wx:key="{{index}}">
+      <text class="{{item.hasRecord?'full':''}} {{item.value == selectedDate?'active_date':''}}" bindtap="selectDate" data-date="{{item}}">{{item.date}}</text>
+    </view> 
+  </view>
+</view>
+
+
+
+<!-- <view class="show_box">选中日期：{{selectedDate}} {{selectedWeek}}</view> -->
+
+<view class="days-assist" >
+    <button type="default" wx:if="{{!todayHasRecord}}" catchtap="accord">今日打卡</button>
+    <button type="default" wx:else catchtap="hasRecord">已打卡</button>
+</view>

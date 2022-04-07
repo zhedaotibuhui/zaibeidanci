@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="sign-container">
+        <text class="sign-guide-text">在背单词</text>
+        <text class="sign-num-text">{{signedNum}}</text>
+        <text class="sign-num-day-text">天</text>
+        <view class="calendar" bindtap='toCalendarPage'>
+            <text class="calendar-text">打卡日历</text>
+            <image class="calendar-icon" src="../../images/icons/calendar.png"/>
+        </view>
+    </view>
+    <view class="vocabulary-container" data-type="{{0}}" bindtap="setBookInfo">
+        <image class="vocabulary-background-image" src="../../images/backgrounds/nature.jpg"/>
+        <text class="vocabulary-name-text">{{bookInfo.bookName?bookInfo.bookName:'暂未选择'}}</text>
+        <view class="vocabulary-guide">
+            <image class="vocabulary-icon" src="../../images/icons/vocabulary.png"/>
+            <text class="vocabulary-guide-text">词表</text>
+        </view>
+        <view class="vocabulary-progress">
+            <view style="overflow: hidden;">
+                <progress percent="{{bookInfo.schedule}}" stroke-width="2" color="pink" color="rgb(60, 219, 185)" ></progress>
+                <text class="vocabulary-progress-text-left">已完成{{bookInfo.schedule}}%</text>
+                <text class="vocabulary-progress-text-right">{{bookInfo.studiedNum}}/{{bookInfo.totalNum}}词</text>
+            </view>
+        </view>
+    </view>
+
+</view>
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+
+<view class="conment">
+    <view class="learnStr" >
+        <button type="default" bindtap="startLearn">learn</button>
+    </view>
+
+    <view class="learnRvw" >
+        <button type="default" bindtap="startreview">review</button>
+    </view>
+
+
+</view>

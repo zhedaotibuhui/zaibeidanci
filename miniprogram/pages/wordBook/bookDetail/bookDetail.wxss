@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Chalkboard;
+  src: url('../../assets/font/chalkboard.ttf'),
+  }
+
+.cet {
+  padding-top: 250rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.word {
+  margin: 234rpx auto 18rpx;
+  font-family: Chalkboard;
+  font-size: 64rpx;
+}
+
+.word-pron {
+  margin-left: 9rpx;
+  font-family: Chalkboard;
+  font-size: 36rpx;
+  color: #8F8F8F;
+}
+
+.word-definition {
+  margin-top: 15rpx;
+  font-family: Yuanti TC;
+  font-size: 30rpx;
+  color: #585858;
+}
+
+/* .soundmark{
+  display: flex;
+  flex-direction: row;
+} */
+
+.soundmark-icon {
+  width: 48rpx;
+  height: 48rpx;
+
+}
+
+.btns{
+  padding: 100rpx;
+
+}
+.master {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.button-mst {
+  display: flex; 
+  flex-direction: column;
+  width: 340rpx;
+  height: 70rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  margin-top: 70rpx;
+  align-items: center;
+  justify-content:center
+}
+
+.master {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.button-fgt {
+  display: flex; 
+  flex-direction: column;
+  width: 340rpx;
+  height: 70rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  align-items: center;
+  justify-content:center
+}
+.forget {
+  /* line-height:90%; */
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.back{
+  margin-top: auto;
+}
+
